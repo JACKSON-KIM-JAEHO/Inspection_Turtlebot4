@@ -19,7 +19,12 @@ setup(
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
-        'console_scripts': [
+    'console_scripts': [
+        'mission_manager = inspection_turtlebot4.mission_manager:main',
+        'lidar_sub = inspection_turtlebot4.lidar_sub:main',
+        'image_sub = inspection_turtlebot4.image_sub:main',
+        'teleop_node = inspection_turtlebot4.teleop_node:main',
         ],
     },
+
 )
